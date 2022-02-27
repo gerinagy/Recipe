@@ -11,6 +11,13 @@
 		1325E12927CC03D800FFD9EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1325E12827CC03D800FFD9EA /* ContentView.swift */; };
 		1325E12B27CC03DA00FFD9EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1325E12A27CC03DA00FFD9EA /* Assets.xcassets */; };
 		1325E12E27CC03DA00FFD9EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1325E12D27CC03DA00FFD9EA /* Preview Assets.xcassets */; };
+		1325E13B27CC1E6D00FFD9EA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1325E13A27CC1E6D00FFD9EA /* HomeView.swift */; };
+		1325E13D27CC1E7900FFD9EA /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1325E13C27CC1E7900FFD9EA /* CategoriesView.swift */; };
+		1325E13F27CC1E8900FFD9EA /* NewRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1325E13E27CC1E8900FFD9EA /* NewRecipeView.swift */; };
+		1325E14127CC1E9700FFD9EA /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1325E14027CC1E9700FFD9EA /* FavoritesView.swift */; };
+		1325E14327CC1E9E00FFD9EA /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1325E14227CC1E9E00FFD9EA /* SettingsView.swift */; };
+		1325E14527CC296400FFD9EA /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1325E14427CC296400FFD9EA /* TabBar.swift */; };
+		1325E14727CC2BF400FFD9EA /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1325E14627CC2BF400FFD9EA /* RecipeModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		1325E12827CC03D800FFD9EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1325E12A27CC03DA00FFD9EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1325E12D27CC03DA00FFD9EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1325E13A27CC1E6D00FFD9EA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1325E13C27CC1E7900FFD9EA /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
+		1325E13E27CC1E8900FFD9EA /* NewRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecipeView.swift; sourceTree = "<group>"; };
+		1325E14027CC1E9700FFD9EA /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		1325E14227CC1E9E00FFD9EA /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		1325E14427CC296400FFD9EA /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		1325E14627CC2BF400FFD9EA /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +66,9 @@
 			isa = PBXGroup;
 			children = (
 				1325E12627CC03D800FFD9EA /* RecipeApp.swift */,
-				1325E12827CC03D800FFD9EA /* ContentView.swift */,
+				1325E13427CC03E500FFD9EA /* Views */,
+				1325E13827CC042000FFD9EA /* Models */,
+				1325E13727CC03FC00FFD9EA /* ViewModels */,
 				1325E12A27CC03DA00FFD9EA /* Assets.xcassets */,
 				1325E12C27CC03DA00FFD9EA /* Preview Content */,
 			);
@@ -65,6 +81,59 @@
 				1325E12D27CC03DA00FFD9EA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1325E13427CC03E500FFD9EA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1325E13927CC044C00FFD9EA /* Main */,
+				1325E13627CC03F100FFD9EA /* Detail */,
+				1325E13527CC03EB00FFD9EA /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1325E13527CC03EB00FFD9EA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		1325E13627CC03F100FFD9EA /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		1325E13727CC03FC00FFD9EA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1325E13827CC042000FFD9EA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1325E14627CC2BF400FFD9EA /* RecipeModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1325E13927CC044C00FFD9EA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1325E12827CC03D800FFD9EA /* ContentView.swift */,
+				1325E14427CC296400FFD9EA /* TabBar.swift */,
+				1325E13A27CC1E6D00FFD9EA /* HomeView.swift */,
+				1325E13C27CC1E7900FFD9EA /* CategoriesView.swift */,
+				1325E13E27CC1E8900FFD9EA /* NewRecipeView.swift */,
+				1325E14027CC1E9700FFD9EA /* FavoritesView.swift */,
+				1325E14227CC1E9E00FFD9EA /* SettingsView.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +206,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1325E14327CC1E9E00FFD9EA /* SettingsView.swift in Sources */,
+				1325E13D27CC1E7900FFD9EA /* CategoriesView.swift in Sources */,
+				1325E13F27CC1E8900FFD9EA /* NewRecipeView.swift in Sources */,
+				1325E14527CC296400FFD9EA /* TabBar.swift in Sources */,
+				1325E14127CC1E9700FFD9EA /* FavoritesView.swift in Sources */,
+				1325E13B27CC1E6D00FFD9EA /* HomeView.swift in Sources */,
 				1325E12927CC03D800FFD9EA /* ContentView.swift in Sources */,
 				1325E12727CC03D800FFD9EA /* RecipeApp.swift in Sources */,
+				1325E14727CC2BF400FFD9EA /* RecipeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
